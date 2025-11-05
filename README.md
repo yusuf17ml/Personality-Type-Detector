@@ -99,6 +99,8 @@ The dataset was sourced from [Kaggle](https://www.kaggle.com/datasets/miadul/int
     ```
     streamlit run frontend/app.py
     ```
+*Interact with the app via the streamlit frontend to get a fast and seamless response from the FastAPI backend*
+
 
 ## What I learned 
 It was a great learning project for me as i was able to:
