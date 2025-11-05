@@ -1,4 +1,4 @@
-# Personality Detector ML Project
+# Personality Detector
 
 
 ## Overview
