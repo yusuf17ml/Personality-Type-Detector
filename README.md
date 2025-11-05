@@ -59,22 +59,22 @@ The dataset was sourced from [Kaggle](https://www.kaggle.com/datasets/miadul/int
 
 
 ## Setup and Installation
-Clone the repository
+- Clone the repository
     ```
     git clone https://github.com/yusuf17ml/Personality-Type-Detector.git
     ```
 
-Navigate to the project drectory
+- Navigate to the project drectory
     ```
     cd Personality-Type-Detector
     ```
 
-Create a virual environment
+- Create a virual environment
     ```
     python -m venv .venv
     ```
     
-Activate the virtual environment
+- Activate the virtual environment
     - Linux/macOS:
     ```
     source .venv/bin/activate
@@ -84,19 +84,24 @@ Activate the virtual environment
     .venv\Scripts\activate
     ```
 
-Install the required packages
+- Install the required packages
     ```
     pip install -r requirements.txt
     ```
 
 
 ## Usage
-Run the FastAPI backend
+- Run the FastAPI backend
     ```
     uvicorn app.main:app --reload
     ```
-Run the streamlit frontend
+- Run the streamlit frontend
     ```
     streamlit run frontend/app.py
     ```
+
+## What I learned 
+It was a great learning project for me as i was able to:
+- Deepen my understanding of FastAPI’s ability to serve machine learning models at scale.
+- Implement model predictions through an API endpoint
 
