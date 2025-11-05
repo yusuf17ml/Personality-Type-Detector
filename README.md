@@ -59,42 +59,43 @@ The dataset was sourced from [Kaggle](https://www.kaggle.com/datasets/miadul/int
 
 
 ## Setup and Installation
-- Clone the repository
+Clone the repository
     ```
     git clone https://github.com/yusuf17ml/Personality-Type-Detector.git
     ```
 
-- Navigate to the project drectory
+Navigate to the project drectory
     ```
     cd Personality-Type-Detector
     ```
 
-- Create a virual environment
+Create a virual environment
     ```
     python -m venv .venv
     ```
     
-- Activate the virtual environment
+Activate the virtual environment
     - Linux/macOS:
-    ```source .venv/bin/activate
+    ```
+    source .venv/bin/activate
     ```
     - Windows:
     ```
     .venv\Scripts\activate
     ```
 
-- Install the required packages
+Install the required packages
     ```
     pip install -r requirements.txt
     ```
 
-    
+
 ## Usage
-- Run the FastAPI backend
+Run the FastAPI backend
     ```
     uvicorn app.main:app --reload
     ```
-- Run the streamlit frontend
+Run the streamlit frontend
     ```
     streamlit run frontend/app.py
     ```
