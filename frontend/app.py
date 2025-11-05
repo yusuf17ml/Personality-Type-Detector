@@ -60,6 +60,8 @@ def main():
         with col1:
             if st.session_state.page > 0:
                     st.button("Previous", on_click=prev, use_container_width=True, disabled=st.session_state.submitted)
+        with col2:
+            st.write(f"Questions answered: {(st.session_state.page * features_per_page) + len(current_features)} / {len(input_data_features)}")
         with col3:
             if st.session_state.page < total_no_of_pages:
                 st.button("Next", on_click=next, use_container_width=True)

@@ -8,7 +8,7 @@ Ratings of Individual characteristics (1-10) via interaction with a Streamlit fr
 
 ## Project Structure
 ```
-PersonalityDetector/
+Personality-Type-Dectector/
 │
 ├── app/                    
 │   ├── main.py              # FastAPI code for data input validation and serving predictions
@@ -43,7 +43,7 @@ PersonalityDetector/
 
 
 ## Data
-The dataset was sourced from [Kaggle](https://www.kaggle.com/datasets/miadul/introvert-extrovert-and-ambivert-classification). It is a synthetic dataset designed to simulate human personality types — Introvert, Extrovert, and Ambivert — based on various behavioral and psychological traits. It contains 20,000 entries and 30 columns, including 29 numerical features representing personality indicators and 1 label column (personality_type). A balanced dataset with approximately 30% frequency for each class.
+The dataset was sourced from [Kaggle](https://www.kaggle.com/datasets/miadul/introvert-extrovert-and-ambivert-classification). It is a synthetic dataset (free from missing values and outliers) designed to simulate human personality types — Introvert, Extrovert, and Ambivert — based on various behavioral and psychological traits. It contains 20,000 entries and 30 columns, including 29 numerical features representing personality indicators and 1 label column (personality_type). A balanced dataset with approximately 30% frequency for each class.
 
 
 ## Model Architecture
