@@ -64,7 +64,8 @@ The dataset was sourced from [Kaggle](https://www.kaggle.com/datasets/miadul/int
 
 
 ## Live Link
-
+Project was successfully deployed on railway. Check it out here
+[Personality-Type-Detector](https://personality-type-detector-production.up.railway.app/)
 
 ## Setup and Installation
 - Clone the repository
