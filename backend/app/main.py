@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 import joblib
 
-from app.preprocessing import preprocess_input
-from app.utils import format_prediction_result
+from backend.app.preprocessing import preprocess_input
+from backend.app.utils import format_prediction_result
 
 app = FastAPI()
 
@@ -20,10 +20,10 @@ def load_model():
     global scaler
     global column_names
     global le_encoder
-    model = joblib.load("models/final_model.pkl")
-    scaler = joblib.load("models/scaler.pkl")
-    column_names = joblib.load("models/column_names.pkl")
-    le_encoder = joblib.load("models/label_encoder.pkl")
+    model = joblib.load("backend/models/final_model.pkl")
+    scaler = joblib.load("backend/models/scaler.pkl")
+    column_names = joblib.load("backend/models/column_names.pkl")
+    le_encoder = joblib.load("backend/models/label_encoder.pkl")
 
 class UserInput(BaseModel):
     social_energy: float
