@@ -10,28 +10,33 @@ Ratings of Individual characteristics (1-10) via interaction with a Streamlit fr
 ```
 Personality-Type-Dectector/
 │
-├── app/                    
-│   ├── main.py              # FastAPI code for data input validation and serving predictions
-│   ├── preprocessing.py     # Code for preprocessing data (scaling) before feeding it into the model.         
-│   └── utils.py             # Code for formating predictions 
-│
+├── backend/
+│   ├── app/
+│   │   ├── main.py             # FastAPI code for data input validation and serving predictions
+│   │   ├── preprocessing.py    # Code for preprocessing data (scaling) before feeding it into the
+│   │   └── utils.py            # Code for formating predictions 
+│   │
+│   └── models/
+│       ├── column_names.pkl     # Saved column names used in feature processing.
+│       ├── final_model.pkl      # The trained model file for personality classification.
+│       ├── label_encoder.pkl    # Encoder for transforming categorical labels (e.g., "Introvert", "Extrovert", "Ambivert").
+│       └── scaler.pkl
+│   
+│   
 ├── data/                
 │   └── personality_synthetic_dataset.csv       # dataset used for model training      
 │   
 ├── frontend/
 │   └── app.py               # Streamlit frontend app         
 │
-├── models/                   
-│   ├── column_names.pkl     # Saved column names used in feature processing.
-│   ├── final_model.pkl      # The trained model file for personality classification.
-│   ├── label_encoder.pkl    # Encoder for transforming categorical labels (e.g., "Introvert", "Extrovert", "Ambivert").
-│   └── scaler.pkl           # Pre-trained scaler (StandardScaler) for scaling features before model prediction.
-│
 ├── notebooks/
 │   └── model_training.py    # Jupyter notebook for model training and experimentation.
 │
-├── requirements.txt         # Python dependencies
-└── README.md                # Project documentation
+├── .dockerignore           # Python dependencies
+├── .gitignore              # Python dependencies
+├── Dockerfile              # Python dependencies
+├── README.md               # Python dependencies
+└── requirements.txt        # Project documentation
 ```
 
 
@@ -56,6 +61,9 @@ The dataset was sourced from [Kaggle](https://www.kaggle.com/datasets/miadul/int
 - Best model (SVM) performance metrics:
     - Accuracy score: 0.99850
     - Micro-F1 score: 0.99850
+
+
+## Live Link
 
 
 ## Setup and Installation
