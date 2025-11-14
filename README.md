@@ -78,36 +78,16 @@ Project was successfully deployed on railway. Check it out here
     cd Personality-Type-Detector
     ```
 
-- Create a virual environment
+- Build a docker image
     ```
-    python -m venv .venv
+    docker build -t p_detect .
     ```
     
-- Activate the virtual environment
-    - Linux/macOS:
+- Run the container
     ```
-    source .venv/bin/activate
+    docker run -p 8000:8000 -p 8501:8501 p_detect
     ```
-    - Windows:
-    ```
-    .venv\Scripts\activate
-    ```
-
-- Install the required packages
-    ```
-    pip install -r requirements.txt
-    ```
-
-
-## Usage
-- Run the FastAPI backend
-    ```
-    uvicorn app.main:app --reload
-    ```
-- Run the streamlit frontend
-    ```
-    streamlit run frontend/app.py
-    ```
+    
 *Interact with the app via the streamlit frontend to get a fast and seamless response from the FastAPI backend*
 
 
@@ -115,4 +95,7 @@ Project was successfully deployed on railway. Check it out here
 It was a great learning project for me as i was able to:
 - Deepen my understanding of FastAPI’s ability to serve machine learning models at scale.
 - Implement model predictions through an API endpoint
+- Containerisation with docker
+- Deployement via railway
+
 
