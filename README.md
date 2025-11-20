@@ -32,11 +32,11 @@ Personality-Type-Dectector/
 ├── notebooks/
 │   └── model_training.py    # Jupyter notebook for model training and experimentation.
 │
-├── .dockerignore           # Python dependencies
-├── .gitignore              # Python dependencies
-├── Dockerfile              # Python dependencies
-├── README.md               # Python dependencies
-└── requirements.txt        # Project documentation
+├── .dockerignore           # Docker ignore file to exclude files/folders from being added to the Docker container
+├── .gitignore              # Git ignore file to exclude files/folders from version control
+├── Dockerfile              # Instructions to build the Docker image for deployment
+├── README.md               # Project documentation
+└── requirements.txt        # Python dependencies
 ```
 
 
