@@ -95,7 +95,7 @@ Project was successfully deployed on railway. Check it out here
 It was a great learning project for me as i was able to:
 - Deepen my understanding of FastAPI’s ability to serve machine learning models at scale.
 - Implement model predictions through an API endpoint
-- Containerisation with docker
-- Deployement via railway
+- Containerise with docker
+- Deploy via railway
 
 
